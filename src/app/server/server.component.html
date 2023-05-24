@@ -1,0 +1,5 @@
+<h3>The Server Component</h3>
+<br>
+<span [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'Online'}">
+    This is the server with ID {{ serverID }} hosted on {{ serverURL }} with port {{ serverPort }} and it is now {{ serverStatus }}</span>
