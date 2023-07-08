@@ -13,6 +13,9 @@ import { StylingComponent } from './styling/styling.component';
 import { ServerBlueprintComponent } from './server-blueprint/server-blueprint.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { UnlessDirective } from './structuralDir/unless.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ServerElementComponent } from './server-element/server-element.componen
     StylingComponent,
     ServerBlueprintComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

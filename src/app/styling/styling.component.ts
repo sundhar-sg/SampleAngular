@@ -9,6 +9,11 @@ export class StylingComponent {
   buttonStatus = true;
   log: Date[] = [];
 
+  numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  switchValue: number = 10;
+
+  onlyOdd = false;
 
   toggleParaView() {
     this.buttonStatus = !this.buttonStatus;

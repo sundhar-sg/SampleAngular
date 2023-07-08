@@ -7,3 +7,19 @@
     [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
     [ngClass]="{'white-text': i >= 4}"
 >{{ logItem }}</div>
+<p appBasicHighlight>Style me with basic directive</p>
+<p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'lightgreen'" >Style me with a better attribute directive</p>
+<div *appUnless="onlyOdd">
+    <li class="list-group-item"
+        [ngClass]="{odd: even % 2 !== 0}"
+        [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow': 'transparent'}"
+        *ngFor="let even of numbers">
+    {{ even }}
+    </li>
+</div>
+<div [ngSwitch]="switchValue">
+    <p *ngSwitchCase="5">Value is 5</p>
+    <p *ngSwitchCase="10">Value is 10</p>
+    <p *ngSwitchCase="100">Value is 100</p>
+    <p *ngSwitchDefault>Value is Default</p>
+</div>
